@@ -52,9 +52,61 @@ public class Main {
                 int num2 = Integer.parseInt(txt_num2.getText());
 
                 int result = num1 + num2;
-                System.out.println("Result : " + result);
+                System.out.println("Result of Addition is : " + result);
 
-                lbl_result.setText("Result : " + result);
+                lbl_result.setText("Result of Addition is : " + result);
+            }
+        });
+
+        btn_sub.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int num1 = Integer.parseInt(txt_num1.getText());
+                int num2 = Integer.parseInt(txt_num2.getText());
+
+                int result = num1 - num2;
+                System.out.println("Result of Subtraction is : " + result);
+
+                lbl_result.setText("Result of Subtraction is : " + result);
+            }
+        });
+
+        btn_multiply.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int num1 = Integer.parseInt(txt_num1.getText());
+                int num2 = Integer.parseInt(txt_num2.getText());
+
+                int result = num1 * num2;
+                System.out.println("Result of Multiplication is : " + result);
+
+                lbl_result.setText("Result of Multiplication is : " + result);
+            }
+        });
+
+        btn_divide.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int num1 = Integer.parseInt(txt_num1.getText());
+                int num2 = Integer.parseInt(txt_num2.getText());
+
+                int result = num1 / num2;
+                System.out.println("Result of Division is : " + result);
+
+                lbl_result.setText("Result of Division is : " + result);
+            }
+        });
+
+        btn_modulus.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int num1 = Integer.parseInt(txt_num1.getText());
+                int num2 = Integer.parseInt(txt_num2.getText());
+
+                int result = num1 % num2;
+                System.out.println("Result of Modulus Division is : " + result);
+
+                lbl_result.setText("Result of Modulus Division is : " + result);
             }
         });
 
